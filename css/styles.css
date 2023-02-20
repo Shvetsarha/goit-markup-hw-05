@@ -111,9 +111,11 @@ button {
     font-size: 16px;
     line-height: 1.5;
     color:var(--primary-text-color);
-    transition: var(--transition)
+    transition: color var(--transition)
 }
-
+.nav-head:hover {
+    transform: color;
+}
 .address-post, 
 .contact-phone {
     font-style: normal;
@@ -121,7 +123,6 @@ button {
     font-size: 16px;
     line-height: 1.5;
     color:var(--title-text-color);
-    transition: var(--transition)
 }
 .page-nav {
     position: relative;
@@ -233,11 +234,11 @@ body {
     display: flex;
     margin:0 auto;
     border-width: 0px;
-    transition: var(--transition)
+    transition: background-color var(--transition)
 }
 .modal-btn:hover,
 .modal-btn:focus {
-    background-color: var(--accent-color-hard);
+   background-color: var(--accent-color-hard);
 }
 /*== section VALUET =========================================*/ 
 .valuet-list {
@@ -326,12 +327,13 @@ body {
     height: 40px;
     border-radius: 50%;
     background-color: #4D5AE5;
-    transition: var(--transition);
+    transition: background-color var(--transition);
 }
 .social-list-link:hover,
 .social-list-link:focus {
     background-color: #404BBF;
 }
+
 /*== section customer ========================================*/ 
 /*== customer H =======*/ 
 .customer {
@@ -361,7 +363,7 @@ body {
     justify-content: center;
     align-items: center;
     fill: #8E8F99;
-    transition: var(--transition);
+    transition: fiill var(--transition), border-color var(--transition)
     
 }
 .customer-link:hover,
@@ -420,7 +422,7 @@ body {
     height: 40px;
     border-radius: 50%;
     background-color:var(--title-text-color);
-    transition: var(--transition);
+    transition: background-color var(--transition);
     
 }
 /*2============================ secod page ===============================*/
@@ -448,7 +450,7 @@ body {
     background:var(--lidht-shade);
     border: 1px solid var(--rerely-color);
     border-radius: 4px;
-    transition: var(--transition);
+    transition: background-color var(--transition), color var(--transition)
 }
 .button-nov:hover,
 .button-nov:focus {
@@ -472,8 +474,8 @@ body {
 }
 .case-distance-foto {
     flex-basis: calc((100% - 48px) / 3);
-    transition: var(--transition);
 }
+
 .button-nov-list {
     justify-content: center;
 }
@@ -511,7 +513,7 @@ body {
     top: 0;
     overflow: auto;
     transform: translate(0, 100%);
-    transition: var(--transition)
+    transition: transform var(--transition)
 
 }
 .case-link:hover .overlay,
@@ -529,8 +531,7 @@ body {
     width: 100%;
     height: 100%;
     background-color: rgba(46, 47, 66, 0.4);
-     
-
+    transition: opacity var(--transition); visibility: var(--transition);
 }
 .backdrop.is-hidden {
     opacity: 0;
@@ -547,7 +548,6 @@ body {
     background-color: #FCFCFC;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px; 
-
 }
 .modal-cloce-btn {
     width: 24px;
