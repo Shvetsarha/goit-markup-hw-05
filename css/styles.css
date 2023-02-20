@@ -113,8 +113,10 @@ button {
     color:var(--primary-text-color);
     transition: color var(--transition)
 }
-.nav-head:hover {
-    transform: color;
+
+.nav-head:hover,
+.nav-head:focus {
+    color: var(--accent-color-hard);
 }
 .address-post, 
 .contact-phone {
@@ -123,6 +125,7 @@ button {
     font-size: 16px;
     line-height: 1.5;
     color:var(--title-text-color);
+    transition: color var(--transition);
 }
 .page-nav {
     position: relative;
@@ -363,7 +366,7 @@ body {
     justify-content: center;
     align-items: center;
     fill: #8E8F99;
-    transition: fiill var(--transition), border-color var(--transition)
+    transition: fill var(--transition), border-color var(--transition)
     
 }
 .customer-link:hover,
@@ -562,19 +565,15 @@ body {
     justify-content: center;
     align-items: center;
     background-color:  #E7E9FC;
-    transition: background-color var(--transition);
+    transition: background-color var(--transition), fill var(--transition);
 }
 .modal-cloce-btn:hover,
 .modal-cloce-btn:focus {
     background-color: #4D5AE5;
-    fill: var(--hero-light-accent);
 }
 
 .modal-cloce-btn:hover .modal-cloce-btn-svg,
 .modal-cloce-btn:focus .modal-cloce-btn-svg {
     fill: var(--hero-light-accent);
-}
-.modal-cloce-btn-svg {
-    transition: fill var(--transition);
-
+  
 }
