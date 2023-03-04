@@ -89,11 +89,12 @@
                         <p class="paragraph">Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.</p>
                     </li>
                 </ul>
+                </div>
             </div>
         </section>
         <section class="doing indent-page">
             <div class="container">
-            <h2 class="title doing-what">What are we doing</h2>
+            <h2 class="title visually-hidden">What are we doing</h2>
             <ul class="list photo-doing">
                 <li class="doing-distance">
                     <img src="./images/screen.jpg" alt="screen">
@@ -101,9 +102,9 @@
                 <li class="doing-distance">
                     <img src="./images/chatbot.jpg" alt="chatbot">
                 </li>
-                <li>
+                <li class="doing-distance">
                     <img src="./images/phon_screen.jpg" alt="phone">
-                </li class="doing-distance">
+                </li>
             </ul>
             </div>
         </section>
@@ -267,7 +268,7 @@
                 <h2 class="title customers-every">Customers</h2>
                 <ul class="customer-logo-list list">
                     <li class="customer-box">
-                         <a href=""class="customer-link link">
+                         <a href="" class="customer-link link">
                             <svg class="customer-logo" width="104" height="56">
                                 <use href="./images/sptite.svg#icon-logo-first"></use>
                             </svg>
@@ -355,16 +356,85 @@
             </ul>
         </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
+    <form class="modal-form backdrop is-hidden" data-modal>
         <div class="modal">
-            <button type="button" class="modal-cloce-btn" data-modal-close>
-                <svg class="modal-cloce-btn-svg" width="8" height="8">
+            <p class="seel-text">Leave your contacts and we will call you back</p>
+            <label class="modal-form-field" for="user-name">
+                <span class="modal-form-imput-desc">Name</span>
+                <input 
+                id="user-name"
+                type="text" 
+                name="user_name" 
+                class="modal-input-name" 
+                required 
+                pattern="^[a-zA-Za]+$"
+                />
+                <span class="icon-person">
+                    <svg class="img-icon-person" width="12" height="12">
+                    <use href="./images/sptite.svg#icon-person"></use>
+                    </svg>
+                </span>
+            </label>
+            <label class="modal-form-field" for="user-phone">
+                <span class="modal-form-imput-desc">Phone</span>
+                <input 
+                id="user-phone"
+                type="tel"  
+                name="user_phone" 
+                class="modal-input-tel" 
+                required 
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                title="xxx-xxx-xx-xx"
+                />
+                <span class="icon-phon">
+                    <svg class="img-icon-phon" width="12" height="12">
+                    <use href="./images/sptite.svg#icon-phone"></use>
+                    </svg>
+                </span>
+            </label>
+            <label class="modal-form-field" for="user-email">
+                <span class="modal-form-imput-desc">Email</span>
+                <input 
+                id="user-email"
+                type="email" 
+                name="user_email" 
+                class="modal-input-email" required>
+                <span class="icon-letter">
+                    <svg class="img-icon-letter" width="12" height="12">
+                    <use href="./images/sptite.svg#icon-letter"></use>
+                    </svg>
+                </span>
+            </label>
+            <label class="modal-form-field" for="user-massage">
+                <span class="modal-form-imput-desc">Comment</span>
+                <textarea 
+                id="user-massage"
+                name="user_message"
+                class="modal-form-messade" 
+                placeholder="Text input"
+                ></textarea>
+            </label>
+            <label class="modal-form-check">
+                <input 
+                id="user-policy" 
+                type="checkbox" 
+                name="user_policy" 
+                class="modal-form-check visually-hidden">
+                <svg class="img-icon-click-svg" width="16" height="16">
+                    <use href="./images/sptite.svg#icon-click"></use>
+                    </svg>
+                <lebel for="user-policy" class="modal-form-check-desc">
+                    I accept the terms and conditions&nbsp;<a href="" class="modal-form-check-list">of Privacy Policy</a>
+                </lebel>
+            </label> 
+            <button type="submit" class="btn-submit">Send</button>
+            <button type="button" class="modal-close-btn" data-modal-close>
+                <svg class="modal-close-btn-svg" width="8" height="8">
                     <use href="./images/sptite.svg#close-modal"></use>
                 </svg>
             </button>
         </div>
-    </div>
-
+    </form>
     <script src="./js/modal.js"></script>
 </body>
 </html>
