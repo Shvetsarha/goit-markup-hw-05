@@ -408,11 +408,11 @@ body {
     background-color:#31D0AA;
 }
 .benefist {
-    color:var(--rerely-color);
+    color:var(--hero-light-accent);
     width: 264px;
 }
 .benefist-media {
-    color:var(--rerely-color);
+    color:var(--hero-light-accent);
     margin-bottom: 16px;
     margin-top: 0;
 }
@@ -438,10 +438,14 @@ body {
     transition: background-color var(--transition); 
 }
 /*========= footer-form ===================*/
+.footer-form {
+    width: 100%;
+}
 .footer-input-user-email {
     display: flex;
 }
 .footer-input-email {
+    display: flex;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
@@ -456,18 +460,16 @@ body {
 }
 .footer-label-email {
     display: flex;
-    width: 254px;
-    display: flex;
-    justify-content: center;
 }
 .footer-send-btn {
+    display: flex;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     color:var(--hero-light-accent);
     background-color: #4D5AE5;   
-    padding: 7px 24px;
+    padding: 8px 24px;
     width: 165px;
     border-radius: 4px;
     border-width: 0px;
@@ -654,27 +656,30 @@ body {
 .modal-form-field {
     position: relative;
 }
+.modal-form-imput-massage {
+    margin-bottom: 18px;
+}
 .img-icon-person, .img-icon-letter, .img-icon-phon {
     position: absolute;
     left: 19px;
     transform: translateY(100%);
     transition: fill var(--transition);
 }
-.modal-input-name:focus + .icon-person {
+.modal-input-name:focus + .img-icon-person {
     fill: #404BBF;
 }
 .modal-input-name:focus {
     outline: none;
     border-color: var(--accent-color);
 }
-.modal-input-tel:focus + .icon-phon {
+.modal-input-tel:focus + .img-icon-phon {
     fill: #404BBF;
 }
 .modal-input-tel:focus {
     outline: none;
     border-color: var(--accent-color);
 }
-.modal-input-email:focus + .icon-letter {
+.modal-input-email:focus + .img-icon-letter {
     fill: #404BBF;
 }
 .modal-input-email:focus{
@@ -745,19 +750,16 @@ body {
     color: #757575;
     padding-left: 24px;
 }
+
 .modal-form-check {
     position: absolute;
     left: 0;
 }
 .img-icon-click-svg {
-    left: 0;
     position: absolute;
-    width: 16px;
-    height: 16px;
-    border: 1.25px solid #2E2F42;
+    border: 1.25px solid var(--primary-text-color);
     border-radius: 2px;
     fill-opacity: 0;
-    outline: none;
 }
 .modal-form-check:checked + .img-icon-click-svg {
     fill-opacity: 1;
